@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PocketPotheri</title>
+
+    <link rel="icon" type="image/x-icon" href="images/Screenshot 2024-09-16 205322.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body id="body">
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="images/Screenshot 2024-09-16 205322.png" alt="New Logo" width="175" height="90">
+            </div>
+
+            <div class="address">
+                <div>
+                    Delivery in 20 minutes
+                </div>
+                <div>
+                    Potheri-SRM Nagar
+                </div>
+            </div>
+
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input id="searchBar" type="text" placeholder="">
+            </div>
+
+            <!-- Update: Add an id to this div to trigger the modal -->
+            <div class="login" id="login-btn">
+                <span>Login</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Modal Structure -->
+    <div id="phone-verification-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="verification-form">
+                <h2>Potheri's last minute app</h2>
+                <form>
+                    <label for="phone-number">Enter mobile number to login:</label>
+                    <div class="phone-input">
+                        <span>+91</span>
+                        <input type="text" id="phone-number" placeholder="Enter mobile number " required>
+                    </div>
+                    <button type="submit">Continue</button>
+                </form>
+                <p>By continuing, you agree to our <a href="#">Terms of Service</a> & <a href="#">Privacy Policy</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Modal Functionality -->
+    <script>
+        // Get modal element
+        var modal = document.getElementById("phone-verification-modal");
+
+        // Get the button that opens the modal
+        var loginBtn = document.getElementById("login-btn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        loginBtn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
+<div class="butten">
+  <div class="but">
+  <div><i class="fa-solid fa-cart-shopping"></i></div>
+  <div>
+      My cart
+  </div>
+</div>
+</div>
+</div>
+</header>
+
+<main class="wrapper">
+<section class="main-sec">
+    <section class="banner">
+    <img src="images\WhatsApp Image 2024-09-17 at 22.51.59_f622b7a2.jpg" alt="Rose Milk banner" width="129" height="150.8623853211009" loading="eager" style="border-radius: 0px; cursor: default;">   
+    </section>
+ 
+    <section class="banner-1">
+      <div class="list">
+    <div class="banner-img">
+      <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=350/layout-engine/2023-03/electronic-WEB-1.jpg">
+    </div>
+    <div class="banner-img">
+      <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=350/layout-engine/2023-03/mango-WEB-1.png">
+    </div>
+    <div class="banner-img">
+      <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=350/layout-engine/2023-03/pharmacy-WEB.jpg">
+    </div>
+      </div>
+    </section>
+    <section class="w-full">
+        <div class="imp_types">
+          <a href="items1.html">             
+            <img alt="Dairy, Bread & Eggs" class="w-auto" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-2_10.png" />
+          </a>           
+          <p class="text-center mt-2">Dairy, Bread & Eggs</p>
+        </div>
+        
+        <div class="flex-none w-[150px]">
+          <a href="items2.html">             
+            <img alt="Snacks & Munchies" class="w-auto" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-5_4.png" />
+          </a>           
+          <p class="text-center mt-2">Snacks & Munchies</p>
+        </div>
+        
+        <div class="flex-none w-[150px]">
+          <a href="items3.html">             
+            <img alt="Breakfast & Instant Food" class="w-auto" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-6_5.png" />
+          </a>           
+          <p class="text-center mt-2">Breakfast & Instant Food</p>
+        </div>
+        
+        <div class="flex-none w-[150px]">
+          <a href="blinkit.html">             
+            <img alt="Sweet Tooth" class="w-auto" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-7_3.png" />
+          </a>           
+          <p class="text-center mt-2">Sweet Tooth</p>
+        </div>
+        
+        <div class="flex-none w-[150px]">
+          <a href="items4.html">             
+            <img alt="Tea, Coffee & Health Drink" class="w-auto" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-9_3.png" />
+          </a>           
+          <p class="text-center mt-2">Tea, Coffee & Health Drink</p>
+        </div>
+        
+        <div class="flex-none w-[150px]">
+          <a href="items5.html">             
+            <img alt="Pharma & Wellness" class="w-auto" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-16.png" />
+          </a>           
+          <p class="text-center mt-2">Pharma & Wellness</p>
+        </div>
+        
+        <div class="flex-none w-[150px]">
+          <a href="items6.html">             
+            <img alt="Personal Care" class="w-auto" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-11/Slice-19.png" />
+          </a>           
+          <p class="text-center mt-2">Personal Care</p>
+        </div>
+      </div>
+    </section>
+    
+    
+   
+   
+    
+    
+    
+    
+    
+    
+    
+    <section class="items">
+
+    
+    <p class="h3">Dairy, Bread & Eggs</p>
+    <section class="card-1">
+    <div class="list-2">
+      <div class="card shadow mb-5 bg-body rounded">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1687948913" alt="Mother Dairy Classic Curd" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+       <div class="time-taken">
+        <i class="fa-sharp fa-regular fa-stopwatch-20"></i>
+        8 MINS
+       </div>
+        <p class="product-name">Mother Dairy Classic Curd</p>
+
+       <div class="row">
+         <p class="product-prize col-md-5">₹34</p>
+         <button class="product-btn offset col-md-5">ADD</button>
+       </div>
+      </div>
+
+      <div class="card shadow mb-5 bg-body rounded">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/168a.jpg?ts=1644839148" alt="Amul Pure Milk Cheese Slices" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+       <div class="time-taken">
+        <i class="fa-sharp fa-regular fa-stopwatch-20"></i>
+        13 MINS
+       </div>
+        <p class="product-name">Amul Pure Milk Cheese Slices</p>
+
+       <div class="row">
+         <p class="product-prize col-md-5">₹132</p>
+         <button class="product-btn offset col-md-5">ADD</button>
+       </div>
+      </div>
+
+      <div class="card shadow mb-5 bg-body rounded">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/10491a.jpg" alt="Nestle Milkmaid Sweetened Condensed Milk" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+       <div class="time-taken">
+        <i class="fa-sharp fa-regular fa-stopwatch-20"></i>
+        8 MINS
+       </div>
+        <p class="product-name">Nestle Milkmaid Sweetened Condensed Milk</p>
+
+       <div class="row">
+         <p class="product-prize col-md-5">₹144</p>
+         <button class="product-btn offset col-md-5">ADD</button>
+       </div>
+      </div>
+
+      <div class="card shadow mb-5 bg-body rounded">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/487729a.jpg?ts=1687333800" alt="Table White Eggs (6 pieces)" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+       <div class="time-taken">
+        <i class="fa-sharp fa-regular fa-stopwatch-20"></i>
+        8 MINS
+       </div>
+        <p class="product-name">Table White Eggs (6 pieces)</p>
+
+       <div class="row">
+         <p class="product-prize col-md-5">₹52</p>
+         <button class="product-btn offset col-md-5">ADD</button>
+       </div>
+      </div>
+
+      <div class="card shadow mb-5 bg-body rounded">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/160a.jpg?ts=1654778815" alt="Amul Salted Butter" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+       <div class="time-taken">
+        <i class="fa-sharp fa-regular fa-stopwatch-20"></i>
+        12 MINS
+       </div>
+        <p class="product-name">Amul Salted Butter</p>
+
+       <div class="row">
+         <p class="product-prize col-md-5">₹275</p>
+         <button class="product-btn offset col-md-5">ADD</button>
+       </div>
+      </div>
+
+      <div class="card shadow mb-5 bg-body rounded">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/19512a.jpg?ts=1647923044" alt="Amul Taaza Toned Fresh Milk" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+       <div class="time-taken">
+        <i class="fa-sharp fa-regular fa-stopwatch-20"></i>
+        8 MINS
+       </div>
+        <p class="product-name">Amul Taaza Toned Fresh Milk</p>
+
+       <div class="row">
+         <p class="product-prize col-md-5">₹27</p>
+         <button class="product-btn offset col-md-5">ADD</button>
+       </div>
+      </div>
+
+      <div class="card shadow mb-5 bg-body rounded">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/192a.jpg?ts=1644908944" alt="Mother Dairy Paneer" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+       <div class="time-taken">
+        <i class="fa-sharp fa-regular fa-stopwatch-20"></i>
+        8 MINS
+       </div>
+        <p class="product-name">Mother Dairy Paneer</p>
+
+       <div class="row">
+         <p class="product-prize col-md-5">₹95</p>
+         <button class="product-btn offset col-md-5">ADD</button>
+       </div>
+      </div>
+
+      <div class="card shadow mb-5 bg-body rounded">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/24194a.jpg?ts=1687525092" alt="Harvest Gold Hearty Brown Bread" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+       <div class="time-taken">
+        <i class="fa-sharp fa-regular fa-stopwatch-20"></i>
+        13 MINS
+       </div>
+        <p class="product-name">Harvest Gold Hearty Brown Bread</p>
+
+       <div class="row">
+         <p class="product-prize col-md-5">₹45</p>
+         <button class="product-btn offset col-md-5">ADD</button>
+       </div>
+      </div>
+
+      <div class="card shadow mb-5 bg-body rounded">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/12872a.jpg" alt="Amul Gold Full Cream Fresh Milk" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+       <div class="time-taken">
+        <i class="fa-sharp fa-regular fa-stopwatch-20"></i>
+        8 MINS
+       </div>
+        <p class="product-name">Amul Gold Full Cream Fresh Milk</p>
+
+       <div class="row">
+         <p class="product-prize col-md-5">₹33</p>
+         <button class="product-btn offset col-md-5">ADD</button>
+       </div>
+      </div>
+
+      <div class="card shadow mb-5 bg-body rounded">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/477482a.jpg?ts=1687615980" alt="Eggoz Farm Fresh White Eggs (10 pieces)" width="140" height="140" loading="lazy" style="border-radius: 0px; object-fit: fill; cursor: default;">
+       <div class="time-taken">
+        <i class="fa-sharp fa-regular fa-stopwatch-20"></i>
+        13 mins
+       </div>
+        <p class="product-name">Eggoz Farm Fresh White Eggs (10 pieces)</p>
+
+       <div class="row">
+         <p class="product-prize col-md-5">₹111</p>
+         <button class="product-btn offset col-md-5">ADD</button>
+       </div>
+      </div>
+    </div>
+    </section>
+     
+
+</section>
+</section>
+      
+    </div>
+  </div>
+</div>
+</main>
+</main>
+
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="myscripts.js"></script>
+  </body>
+</html> 
